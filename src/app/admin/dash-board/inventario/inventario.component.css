@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+h2, h3, th{
+    font-family: "Libre Baskerville", serif;
+}
+
+
+.imgAdmin img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.titulo{
+    margin-top: 50px;
+}

@@ -1,0 +1,21 @@
+<div class="titulo">
+    <h2 class="text-center text-uppercase">Bienvenido ADMINISTRADOR</h2>
+</div>
+
+<main class="container mt-5 border border-black rounded-3 my-5">
+    <h2>USUARIOS</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider" id="miTabla">
+            <tr *ngFor="let usuarios of allUsuarios">
+                <td>{{usuarios.fullName}}</td>
+                <td>{{usuarios.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</main>

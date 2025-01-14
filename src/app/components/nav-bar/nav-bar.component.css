@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+li, a, button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: rgb(3, 3, 3);
+	text-decoration: none;
+	list-style: none;
+}
+.logo{
+	aspect-ratio: 4/3;
+	width: 7.3%;
+	object-fit: contain;
+	cursor: pointer;
+	image-rendering: auto;
+}
+#click {
+	display: none;
+}
+
+header{
+	width: 100vh;
+	height: 100px;
+}
+
+.menu {
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 3%;
+	padding-right: 8%;
+	width: 100vw;
+	z-index: 1000;
+}
+
+.nav__links {
+	list-style: none;
+}
+
+.nav__links li {
+	display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.bi{
+	background-color: rgb(233, 20, 20);
+	/* position: relative;
+	left: 710px;
+	list-style: none; */
+}
+
+
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover, .active {
+	color: #00a91f;
+}
+
+button {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: rgb(14, 249, 50);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(253, 253, 253, 0.8);
+	border: solid;
+}
+
+.logo {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.menu-btn {
+	color: white;
+	display: none;
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+@media (max-width: 710px) {
+	.nav__links {
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background-color: #24252A;
+		height: 100vh;
+		width: 100%;
+		display: block;
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+
+	.cta {
+		display: inline-flex;
+		position: fixed;
+		bottom: 80px;
+		width: 100vw;
+		left: -100;
+		justify-content: center;
+		transition: all 0.3s ease;
+	}
+
+
+	#click:not(:checked) ~ .nav__links{
+		left: -100%;
+	}
+	
+	#click:not(:checked) ~ .cta{
+		left: -100%;
+	}
+
+	#click:checked ~ .nav__links {
+		left: 0%;
+	}
+
+	#click:checked ~ .cta{
+		left: 0%;
+	}
+
+	#click:checked ~ .menu-btn i:before {
+		content: "\f00d";
+	}
+
+	.nav__links li {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.menu-btn {
+		display: inline-block;
+	}
+	
+	.logo{
+		height: 100px;
+	}
+}
+
+@media (max-width: 435px){
+	.logo{
+		width: 600px;
+        position: relative;
+		left: 26px;
+	}
+
+
+
+}

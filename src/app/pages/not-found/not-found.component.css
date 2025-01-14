@@ -1,0 +1,26 @@
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 80vw;
+    height:70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerImg{
+    margin-top: 200px;
+    border: solid;
+    width: 600px;
+    height: 400px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}

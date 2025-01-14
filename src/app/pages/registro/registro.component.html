@@ -1,0 +1,33 @@
+<app-nav-bar></app-nav-bar>
+<article>
+    <form class="form" [formGroup]="formularioRegistro"  (ngSubmit)="handleSubmint()">
+        <h2 class="formTitle">Registrate</h2>
+        <p class="formP">¿Ya tienes una cuenta?</p> <a routerLink ="/inicioSesion"  class="formLink">Entra aquí</a>
+
+        <div class="formContainer">
+            <div class="formGroup">
+                <input required type="text" id="name" class="formInput" placeholder=" " name="fullName" formControlName="fullName">
+                <label for="name" class="fomrLabel">Nombre:</label>
+                <span class="formLine"></span>
+            </div>
+            <div class="formContainer">
+                <div class="formGroup">
+                    <input required type="text" id="email" class="formInput" placeholder=" " name="email" formControlName="email">
+                    <label for="email" class="fomrLabel">Email:</label>
+                    <span class="formLine"></span>
+                </div>
+            </div>
+            <div class="formContainer">
+                <div class="formGroup">
+                    <input required type="text" id="password" class="formInput" placeholder=" " name="password" formControlName="password">
+                    <label for="password" class="fomrLabel">Contraseña:</label>
+                    <span class="formLine"></span>
+                </div>
+            </div>
+
+            <!-- <input type="submit" class="formSubmit" value="Registrarse"> -->
+            <button type="submit" class="formSubmit">Registrarse</button>
+        </div>
+
+    </form>
+</article>

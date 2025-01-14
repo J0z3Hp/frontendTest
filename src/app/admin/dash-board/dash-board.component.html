@@ -1,0 +1,27 @@
+<!-- NAVBAR -->
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+        <nav class="navbar navbar-dark bg-dark">
+            <form class="container-fluid justify-content">
+                <button routerLink="/" class="btn btn-outline-success me-2" type="button">PAGINA PRINCIPAL</button>
+                <button routerLink="/dashBoard" class="btn btn-sm btn-outline-secondary" type="button">Productos</button>
+                <button routerLink="/dashBoard/usuarios" class="btn btn-sm btn-outline-secondary" type="button">Usuarios</button>
+                <button routerLink="/dashBoard/administradores" class="btn btn-sm btn-outline-secondary" type="button">Administradores</button>
+                <button routerLink="/dashBoard/registroAdmin" class="btn btn-sm btn-outline-secondary" type="button">+ Agreagar Admin</button>
+                <button  *ngIf="isLog" (click)="cierreSesion()">Cierre de Sesión</button>
+            </form>
+        </nav> 
+    </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<!-- NAVBAR -->
+
+<router-outlet></router-outlet>

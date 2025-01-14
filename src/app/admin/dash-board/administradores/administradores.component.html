@@ -1,0 +1,22 @@
+<div class="titulo">
+    <h2 class="text-center text-uppercase">Bienvenido ADMINISTRADOR</h2>
+</div>
+
+<main class="container mt-5 border border-black rounded-3 my-5">
+    <h2>ADMINISTRADORES</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider" id="miTabla">
+            <tr *ngFor="let admins of allAdmins">
+                <td>{{admins.name}}</td>
+                <td>{{admins.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+

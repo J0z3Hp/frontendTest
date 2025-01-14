@@ -1,0 +1,78 @@
+<div class="titulo">
+    <h2 class="text-center text-uppercase">Bienvenido ADMINISTRADOR</h2>
+</div>
+
+<div class="container my-5">
+    <div class="col-md-4 offset-md-10">
+        <button type="button" class="btn btn-success" (click)="toggleDiv()">
+            <i class="bi bi-plus-square"></i>
+            Agregar un nuevo producto
+        </button>
+    </div>
+</div>
+
+<div class="container mt-5 " *ngIf="showDiv">
+    <h3 class="text-center">{{ editMode ? 'Modificar Producto' : 'Crear Producto' }}</h3>
+    <form class="py-5 col-lg-6 text-center">
+        <div class="mb-3">
+            <label for="inputName" class="form-label">Imagen</label>
+            <input type="text" class="form-control" name="nombre" [(ngModel)]="image"/>
+        </div>
+        <div class="mb-3">
+            <label for="inputImagen" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="imagen" [(ngModel)]="name"/>
+        </div>
+        <div class="mb-3">
+            <label for="inputPrecio" class="form-label">Precio</label>
+            <input type="text" class="form-control" name="precio" [(ngModel)]="price"/>
+        </div>
+
+        <button (click)="editMode ? putProduct() : postData()" type="button"
+            class="btn btn-primary bg-my-color col-12 btn btn-success">
+            {{ editMode ? 'Modificar Producto' : 'Crear Producto' }}
+        </button>
+        <button (click)="toggleDiv()" type="button" class="btn btn-danger bg-my-color col-12 mt-3">
+            Cerrar
+        </button>
+    </form>
+    
+</div>
+
+
+<main class="container mt-5 border border-black rounded-3 my-5">
+    <h2>PRODUCTOS</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider" id="miTabla">
+            <tr *ngFor="let productos of allProducts">
+                <td>{{productos.name}}</td>
+                <td class="imgAdmin"><img src="{{productos.image}}" alt=""></td>
+                <td>${{productos.price}}</td>
+                <td class="acciones">
+                    <button type="button" class="btn btn-info mx-3" (click)="productsId(productos._id)">
+                        <i class="bi bi-pencil-square"></i>
+                        Editar
+                    </button>
+
+                    <button type="button" class="btn btn-danger" (click)="deleteProduct(productos._id)">
+                        <i class="bi bi-trash"></i>
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</main>
+
+
+
+
+

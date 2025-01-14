@@ -1,0 +1,33 @@
+
+<article>
+    <form class="form" [formGroup]="formularioRegistroAdmin" (ngSubmit)="handleSubmint()">
+        <h2 class="formTitle">Registrate</h2>
+        <p class="formP">¿Ya tienes una cuenta?</p> <a routerLink ="/loginAdmin"  class="formLink">Entra aquí</a>
+
+        <div class="formContainer">
+            <div class="formGroup">
+                <input required type="text" id="name" class="formInput" placeholder=" " name="name" formControlName="name">
+                <label for="name" class="fomrLabel">Nombre:</label>
+                <span class="formLine"></span>
+            </div>
+            <div class="formContainer">
+                <div class="formGroup">
+                    <input required type="text" id="email" class="formInput" placeholder=" " name="email" formControlName="email">
+                    <label for="email" class="fomrLabel">Email:</label>
+                    <span class="formLine"></span>
+                </div>
+            </div>
+            <div class="formContainer">
+                <div class="formGroup">
+                    <input required type="text" id="password" class="formInput" placeholder=" " name="password" formControlName="password">
+                    <label for="password" class="fomrLabel">Contraseña:</label>
+                    <span class="formLine"></span>
+                </div>
+            </div>
+
+            <input type="submit" class="formSubmit" value="Registrarse">
+
+        </div>
+
+    </form>
+</article>

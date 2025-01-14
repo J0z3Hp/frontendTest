@@ -1,0 +1,32 @@
+<article>
+  <form class="form" [formGroup]="formularioLogin" (ngSubmit)="handleSubmint()">
+      <h2 class="formTitle">Inicio de Sesión</h2>
+      <!-- <p class="formP">¿Ya tienes una cuenta? <a href="#" class="formLink">Entra aquí</a></p> -->
+
+      <div class="formContainer">
+          <div class="formContainer">
+              <div class="formGroup">
+                  <input type="text" id="email" class="formInput" placeholder=" " name="email" formControlName="email">
+                  <label for="email" class="fomrLabel">Email:</label>
+                  <span class="formLine"></span>
+              </div>
+          </div>
+          <div class="formContainer">
+              <div class="formGroup">
+                  <input type="password" id="password" class="formInput" placeholder=" " name="password" formControlName="password">
+                  <label for="password" class="fomrLabel">Contraseña:</label>
+                  <span class="formLine"></span>
+              </div>
+          </div>
+          <div>
+            <a routerLink="/registro">Registrate</a>
+          </div>
+          <div>
+            <a href="#">Olvidaste tú contraseña?</a>
+          </div>
+
+          <input type="submit" class="formSubmit" value="Iniciar Sesión">
+      </div>
+
+  </form>
+</article>
