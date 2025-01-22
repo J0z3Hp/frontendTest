@@ -8,6 +8,7 @@ Incluye un conjunto de tests unitarios que verifican la funcionalidad de los com
 Los tests unitarios son una técnica de prueba que valida la funcionalidad de una unidad de código (como una función o un método) de manera aislada.
 
 ## 🔍 Evidencia
+![alt text](https://github.com/J0z3Hp/frontendTest/blob/main/public/assets/testFrontend.PNG "Evidencia")
 
 - 🛠️ Beneficios de los Tests Unitarios
 - 🕒 Detectan errores temprano: Facilitan la identificación de errores antes de desplegar el sistema.
