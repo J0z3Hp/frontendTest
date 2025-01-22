@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { jwtDecode } from "jwt-decode";
+import { jwtDecode } from "jwt-decode"; 
 import { CredencialesAdmin } from '../interfaces/credenciales-admin';
 import { Credenciales } from '../interfaces/credenciales';
 
@@ -23,7 +23,7 @@ private URL_LOGIN = 'http://localhost:9000/iniciarSesion/';
 
 // Iniciamos peticiones
 
-inicioSesionAdmin(credencialesAdmin:CredencialesAdmin){
+inicioSesionAdmin(credencialesAdmin:CredencialesAdmin,){
 
   return this._httpClient.post(this.URL_LOGINADMIN, credencialesAdmin);
 

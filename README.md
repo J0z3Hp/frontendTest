@@ -1,18 +1,19 @@
-Trendy JJ
-¡Bienvenido a Trendy JJ Shop! 🎉 Tu tienda en línea para los amantes de la moda 🛒✨ Aquí encontrarás modelos clásicos, deportivos, y de colección. Variedad, versatilidad y buen gusto para ti y para aquellos que buscan un regalo único 🎁.
+# Test Unitario en Proyecto de Backend 🚀
+## 📋 Descripción del Proyecto
+Este proyecto corresponde al desarrollo final de un backend para un sistema de e-commerce. El sistema fue implementado utilizando Node.js, con un enfoque en la modularidad y escalabilidad.
 
-📋 Características
-📦 Catálogo amplio: Explora una colección de camisas, camisetas, esqueletos, entre otros productos de vestir con modelos detallados y de alta calidad.
-🔍 Búsqueda: Encuentra la prenda que buscas.
-💳 Pago seguro: Métodos de pago confiables y protegidos para tu seguridad.
-🚚 Envío rápido: Recibe tus prendas en la puerta de tu casa.
+Incluye un conjunto de tests unitarios que verifican la funcionalidad de los componentes clave, asegurando la calidad y la confiabilidad del software.
 
-Nuestro sitio web ha sido cuidadosamente diseñado para brindar a los usuarios y amantes de la moda una plataforma intuitiva y atractiva donde encontraras un catalogo con alta variedad de prendas de vanguardia y autenticidad. Con una interfaz amigable y una estética inspirada en la calidad, elegancia y estilo de nuestras prendas, te ofrecemos una experiencia de usuario inigualable, facilitando un proceso de compra seguro y al alcance de todos.
+## 🔍 ¿Qué son los tests unitarios?
+Los tests unitarios son una técnica de prueba que valida la funcionalidad de una unidad de código (como una función o un método) de manera aislada.
 
-Desde un sencillo proceso de registro hasta un catálogo extenso y fácil de navegar, te permite comprar tus modelos favoritos de manera rápida y segura. Además, nuestra plataforma se adapta perfectamente a dispositivos móviles, permitiéndote acceder a tu colección y realizar transacciones desde cualquier lugar y en cualquier momento.
+## 🔍 Evidencia
 
-Con este proyecto, buscamos construir una comunidad sólida que tenga de primera mano las ultimas actualizaciones respecto a la moda visitiendo ropa de calidad para cualquier ocasión. Nuestro objetivo es impulsar las ventas, y el crecimiento de nuestra comunidad como marca, generando un mercado dinámico y atractivo para todos los amantes de verse bien, no olvides que proyectar una buena imagen es la base del exito.
+- 🛠️ Beneficios de los Tests Unitarios
+- 🕒 Detectan errores temprano: Facilitan la identificación de errores antes de desplegar el sistema.
+- 🔒 Evitan regresiones: Garantizan que futuras actualizaciones no afecten el código existente.
+- 📈 Mejoran la calidad: Aseguran un código limpio y funcional.
 
-👥 Autores
+## 👥 Autores
 Jose Luis Mariño
-Juan Felipe Rodriguez
+
